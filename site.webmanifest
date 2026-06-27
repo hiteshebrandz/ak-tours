@@ -1,0 +1,17 @@
+{
+  "name": "Ankit Tours & Travels",
+  "short_name": "Ankit Tours",
+  "description": "Premium cab rental, airport transfer and outstation travel in Mumbai.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#0077B6",
+  "icons": [
+    {
+      "src": "/assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

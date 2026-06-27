@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Ankit Tours and Travels - Premium Cab Services in Mumbai">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#0077B6"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00B4D8"/>
+      <stop offset="100%" stop-color="#0077B6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <circle cx="1050" cy="120" r="180" fill="#fff" opacity="0.04"/>
+  <circle cx="150" cy="520" r="220" fill="#fff" opacity="0.05"/>
+  <rect x="80" y="80" width="1040" height="470" rx="32" fill="#fff" opacity="0.06"/>
+  <g transform="translate(100,165)">
+    <rect width="120" height="120" rx="28" fill="url(#g2)"/>
+    <path d="M28 78c0-16 12-28 32-28s32 12 32 28" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M34 78h52l-6 14H40l-6-14z" fill="#fff"/>
+    <rect x="42" y="58" width="36" height="14" rx="6" fill="#fff"/>
+    <circle cx="44" cy="92" r="7" fill="#0F172A"/>
+    <circle cx="76" cy="92" r="7" fill="#0F172A"/>
+  </g>
+  <text x="250" y="220" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="56" font-weight="700">Ankit Tours &amp; Travels</text>
+  <text x="250" y="285" fill="#E2E8F0" font-family="Arial,Helvetica,sans-serif" font-size="30">Your Trusted Travel Partner in Mumbai</text>
+  <text x="250" y="350" fill="#F59E0B" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="600">Cab Rental " Airport Transfer " Outstation Tours</text>
+  <rect x="250" y="390" width="320" height="56" rx="28" fill="#00B4D8"/>
+  <text x="410" y="426" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">Call: 9769588544</text>
+  <text x="250" y="500" fill="#CBD5E1" font-family="Arial,Helvetica,sans-serif" font-size="22">Thakur Village, Kandivali East, Mumbai</text>
+</svg>

@@ -1,0 +1,3685 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ankit Tours & Travels - Premium cab rental, airport transfer, outstation travel & tourist packages in Mumbai. Book comfortable, safe & affordable rides with Sanjay Tiwari.">
+  <meta name="keywords" content="cab rental Mumbai, airport transfer Kandivali, outstation taxi, Ankit Tours Travels, wedding transportation Mumbai">
+  <meta name="author" content="Ankit Tours & Travels">
+  <meta property="og:title" content="Ankit Tours & Travels | Premium Cab Services in Mumbai">
+  <meta property="og:description" content="Comfortable, Safe & Affordable Cab Services for Airport Transfers, Local Travel, Outstation Trips & More.">
+  <meta property="og:type" content="website">
+  <title>Ankit Tours & Travels | Premium Cab Rental & Travel Services in Mumbai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+/* ============================================
+   Ankit Tours & Travels - Premium Stylesheet
+   ============================================ */
+
+:root {
+  --primary: #00B4D8;
+  --primary-dark: #0096B4;
+  --secondary: #0077B6;
+  --accent: #F59E0B;
+  --accent-dark: #D97706;
+  --dark: #0F172A;
+  --dark-light: #1E293B;
+  --white: #FFFFFF;
+  --gray-50: #F8FAFC;
+  --gray-100: #F1F5F9;
+  --gray-200: #E2E8F0;
+  --gray-300: #CBD5E1;
+  --gray-400: #94A3B8;
+  --gray-500: #64748B;
+  --gray-600: #475569;
+  --text: #334155;
+  --text-light: #64748B;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 4px 20px rgba(15, 23, 42, 0.1);
+  --shadow-lg: 0 10px 40px rgba(15, 23, 42, 0.12);
+  --shadow-xl: 0 20px 60px rgba(15, 23, 42, 0.15);
+  --shadow-glow: 0 0 40px rgba(0, 180, 216, 0.3);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --header-height: 80px;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --section-bg: var(--white);
+  --card-bg: var(--white);
+  --input-bg: var(--gray-50);
+}
+
+[data-theme="dark"] {
+  --dark: #F8FAFC;
+  --dark-light: #E2E8F0;
+  --text: #CBD5E1;
+  --text-light: #94A3B8;
+  --gray-50: #0F172A;
+  --gray-100: #1E293B;
+  --gray-200: #334155;
+  --section-bg: #0B1120;
+  --card-bg: #1E293B;
+  --input-bg: #0F172A;
+  --glass-bg: rgba(30, 41, 59, 0.9);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--section-bg);
+  overflow-x: hidden;
+  transition: background var(--transition), color var(--transition);
+}
+
+body.loading {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition);
+}
+
+ul { list-style: none; }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 100px 0;
+  background: var(--section-bg);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  color: var(--text-light);
+  font-size: 1.05rem;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 28px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.btn-sm { padding: 8px 20px; font-size: 0.875rem; }
+.btn-lg { padding: 14px 32px; font-size: 1rem; }
+.btn-block { width: 100%; }
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 180, 216, 0.5);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--secondary);
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:hover {
+  background: #20BD5A;
+  transform: translateY(-2px);
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: linear-gradient(135deg, var(--dark) 0%, #1a2744 50%, var(--secondary) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-content {
+  text-align: center;
+  color: var(--white);
+}
+
+.loader-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  animation: pulse 1.5s ease infinite;
+}
+
+.loader-content h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.loader-bar {
+  width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  margin: 0 auto 16px;
+  overflow: hidden;
+}
+
+.loader-progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: var(--radius-full);
+  animation: loadProgress 2s ease forwards;
+}
+
+.loader-content p {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+@keyframes loadProgress {
+  to { width: 100%; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Scroll Progress */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 9999;
+  background: transparent;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transition: width 0.1s linear;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all var(--transition);
+}
+
+.header.scrolled {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-md);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--white);
+  transition: color var(--transition);
+}
+
+.header.scrolled .nav-logo,
+.header.menu-open .nav-logo {
+  color: var(--dark);
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.1rem;
+}
+
+.logo-text strong {
+  color: var(--primary);
+}
+
+.header.scrolled .logo-text strong,
+.header.menu-open .logo-text strong {
+  color: var(--secondary);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition);
+}
+
+.header.scrolled .nav-link,
+.header.menu-open .nav-link {
+  color: var(--text);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary);
+  background: rgba(0, 180, 216, 0.1);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.15);
+  transition: all var(--transition);
+}
+
+.header.scrolled .theme-toggle,
+.header.menu-open .theme-toggle {
+  color: var(--text);
+  background: var(--gray-100);
+}
+
+.theme-toggle:hover {
+  background: rgba(0, 180, 216, 0.2);
+  color: var(--primary);
+}
+
+.nav-cta { display: flex; }
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+  padding: 4px 0;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all var(--transition);
+}
+
+.header.scrolled .nav-toggle span,
+.header.menu-open .nav-toggle span {
+  background: var(--dark);
+}
+
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--header-height) + 40px) 0 60px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.hero-slideshow {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 1.5s ease, transform 8s ease;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.85) 0%,
+    rgba(0, 119, 182, 0.6) 50%,
+    rgba(15, 23, 42, 0.75) 100%
+  );
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--accent);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.hero-text h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  margin-bottom: 32px;
+  max-width: 540px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Booking Widget */
+.booking-widget {
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: var(--shadow-xl);
+  animation: floatWidget 6s ease-in-out infinite;
+}
+
+@keyframes floatWidget {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.booking-widget-header {
+  margin-bottom: 24px;
+}
+
+.booking-widget-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.booking-widget-header h3 i {
+  color: var(--primary);
+}
+
+.booking-widget-header p {
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-group label i {
+  color: var(--primary);
+  font-size: 0.75rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 16px;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text);
+  background: var(--input-bg);
+  transition: all var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(0, 180, 216, 0.15);
+}
+
+.booking-form .btn {
+  margin-top: 20px;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-scroll a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* Brand Carousel */
+.brand-carousel {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.brand-track {
+  display: flex;
+  gap: 60px;
+  animation: scrollBrand 30s linear infinite;
+  width: max-content;
+}
+
+.brand-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+
+.brand-item i {
+  font-size: 1.1rem;
+}
+
+@keyframes scrollBrand {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-img-wrapper {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.about-img-wrapper img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.about-img-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.about-badge {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  padding: 20px 24px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.about-badge-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.about-badge-text {
+  font-size: 0.8rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.about-content p {
+  color: var(--text-light);
+  margin-bottom: 28px;
+  font-size: 1.05rem;
+}
+
+.about-features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.about-feature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  transition: all var(--transition);
+}
+
+[data-theme="dark"] .about-feature {
+  background: var(--gray-100);
+}
+
+.about-feature:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-md);
+}
+
+.about-feature i {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--white);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.about-feature h4 {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  color: var(--dark);
+  margin-bottom: 2px;
+}
+
+.about-feature p {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Services */
+.services {
+  background: var(--gray-50);
+}
+
+[data-theme="dark"] .services {
+  background: #0B1120;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--card-bg);
+  padding: 32px 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .service-card {
+  border-color: var(--gray-200);
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, rgba(0, 180, 216, 0.15), rgba(0, 119, 182, 0.15));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+  transition: all var(--transition);
+}
+
+.service-card:hover .service-icon {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.service-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.service-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap var(--transition);
+}
+
+.service-card:hover .service-link {
+  gap: 10px;
+}
+
+/* Fleet */
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.vehicle-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition);
+  border: 1px solid var(--gray-200);
+}
+
+.vehicle-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.vehicle-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.vehicle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.vehicle-card:hover .vehicle-image img {
+  transform: scale(1.12);
+}
+
+.vehicle-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.vehicle-card:hover .vehicle-overlay {
+  opacity: 1;
+}
+
+.vehicle-info {
+  padding: 24px;
+}
+
+.vehicle-info h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.vehicle-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.vehicle-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  background: var(--gray-50);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+}
+
+[data-theme="dark"] .vehicle-meta span {
+  background: var(--gray-100);
+}
+
+.vehicle-meta i {
+  color: var(--primary);
+}
+
+.vehicle-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vehicle-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.vehicle-features i {
+  color: var(--accent);
+  font-size: 0.75rem;
+}
+
+/* Why Us */
+.why-us {
+  background: linear-gradient(180deg, var(--gray-50) 0%, var(--section-bg) 100%);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.why-card {
+  background: var(--card-bg);
+  padding: 28px 24px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition);
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.why-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.25rem;
+}
+
+.why-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.why-card p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* Stats */
+.stats {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.stats-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 50%, var(--secondary) 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.stats-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.stat-item {
+  color: var(--white);
+}
+
+.stat-item > div:first-child,
+.stat-number {
+  display: inline;
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.stat-suffix {
+  display: inline;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 800;
+}
+
+.stat-text {
+  display: block !important;
+}
+
+.stat-item p {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+/* Packages */
+.packages {
+  background: var(--gray-50);
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.package-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition);
+  border: 1px solid var(--gray-200);
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.package-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.package-card:hover .package-image img {
+  transform: scale(1.1);
+}
+
+.package-content {
+  padding: 24px;
+}
+
+.package-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.package-content > p {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.package-content > p i {
+  color: var(--primary);
+  margin-right: 6px;
+}
+
+.package-desc {
+  font-size: 0.9rem !important;
+  margin-bottom: 20px !important;
+}
+
+/* Testimonials */
+.testimonial-slider {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-track {
+  position: relative;
+  min-height: 280px;
+}
+
+.testimonial-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.6s ease;
+  pointer-events: none;
+}
+
+.testimonial-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+  position: relative;
+}
+
+.testimonial-card {
+  padding: 40px;
+  border-radius: var(--radius-xl);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.testimonial-stars {
+  color: var(--accent);
+  font-size: 1.25rem;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  color: var(--text);
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.testimonial-author h4 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--dark);
+  text-align: left;
+}
+
+.testimonial-author span {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.testimonial-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray-300);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.testimonial-dot.active {
+  background: var(--primary);
+  width: 28px;
+  border-radius: var(--radius-full);
+}
+
+/* Gallery */
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text);
+  background: var(--gray-100);
+  border: 2px solid transparent;
+  transition: all var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--white);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 4/3;
+  transition: all var(--transition);
+}
+
+.gallery-item.hidden {
+  display: none;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  background: var(--gray-100);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 119, 182, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.gallery-overlay i {
+  color: var(--white);
+  font-size: 2rem;
+  transform: scale(0.5);
+  transition: transform var(--transition);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-item:hover .gallery-overlay i {
+  transform: scale(1);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  background: rgba(15, 23, 42, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition);
+}
+
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  color: var(--white);
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: var(--primary);
+}
+
+.lightbox-close { top: 20px; right: 20px; }
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+
+/* FAQ */
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  margin-bottom: 12px;
+  border: 1px solid var(--gray-200);
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+.faq-item.active {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-align: left;
+  transition: color var(--transition);
+}
+
+.faq-question i {
+  color: var(--primary);
+  transition: transform var(--transition);
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+.faq-answer p {
+  padding: 0 24px 20px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-card {
+  padding: 32px;
+  border-radius: var(--radius-xl);
+  height: 100%;
+}
+
+.contact-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+
+.contact-list li {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-list li > i {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, rgba(0, 180, 216, 0.15), rgba(0, 119, 182, 0.15));
+  color: var(--primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-list strong {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-bottom: 2px;
+}
+
+.contact-list span,
+.contact-list a {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.contact-list a:hover {
+  color: var(--primary);
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.contact-map-section {
+  max-width: 960px;
+  margin: 56px auto 0;
+}
+
+.contact-map-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+  padding: 0 8px;
+  flex-wrap: wrap;
+}
+
+.contact-map-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px rgba(0, 180, 216, 0.35);
+}
+
+.contact-map-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--dark);
+  margin-bottom: 4px;
+}
+
+.contact-map-header p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.contact-map-header .btn-outline-map {
+  margin-left: auto;
+}
+
+.btn-outline-map {
+  background: transparent;
+  color: var(--secondary);
+  border: 2px solid var(--primary);
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition);
+}
+
+.btn-outline-map:hover {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 180, 216, 0.35);
+}
+
+.contact-map-wrapper {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  height: 420px;
+  border: 1px solid var(--glass-border);
+}
+
+.contact-map-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-xl);
+  padding: 2px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.contact-map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: grayscale(10%) contrast(1.05);
+  transition: filter var(--transition);
+}
+
+.contact-map-wrapper:hover iframe {
+  filter: grayscale(0%) contrast(1);
+}
+
+.contact-form-wrapper {
+  height: 100%;
+}
+
+.contact-form {
+  padding: 32px;
+  border-radius: var(--radius-xl);
+}
+
+.contact-form h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 16px;
+}
+
+/* Footer */
+.footer {
+  background: #0B1120;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 80px 0 0;
+}
+
+.footer .nav-logo {
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-brand p {
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  max-width: 280px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social a {
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  transition: all var(--transition);
+}
+
+.footer-social a:hover {
+  background: var(--primary);
+  transform: translateY(-3px);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-family: var(--font-heading);
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+  transition: all var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+  padding-left: 6px;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.footer-contact i {
+  color: var(--primary);
+  margin-top: 4px;
+}
+
+.footer-contact a:hover {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  font-size: 0.85rem;
+}
+
+.footer-bottom i {
+  color: #ef4444;
+}
+
+.footer-credit {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer-credit a {
+  color: var(--primary);
+  font-weight: 600;
+  margin-left: 4px;
+  transition: all var(--transition);
+}
+
+.footer-credit a:hover {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Floating Buttons */
+.float-btn {
+  position: fixed;
+  z-index: 999;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--white);
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition);
+}
+
+.float-btn:hover {
+  transform: scale(1.1);
+}
+
+.float-whatsapp {
+  bottom: 100px;
+  right: 24px;
+  background: #25D366;
+  animation: pulseWhatsApp 2s ease infinite;
+}
+
+.float-call {
+  bottom: 170px;
+  right: 24px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+@keyframes pulseWhatsApp {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7); }
+}
+
+.float-tooltip {
+  position: absolute;
+  right: 70px;
+  background: var(--dark);
+  color: var(--white);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition);
+}
+
+.float-btn:hover .float-tooltip {
+  opacity: 1;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all var(--transition);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--accent-dark);
+  transform: translateY(-4px);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition);
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  padding: 40px;
+  border-radius: var(--radius-xl);
+  text-align: center;
+  transform: scale(0.9) translateY(20px);
+  transition: transform var(--transition);
+  box-shadow: var(--shadow-xl);
+}
+
+.modal.active .modal-content {
+  transform: scale(1) translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gray-100);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+}
+
+.modal-close:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.modal-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.modal-icon.success {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22C55E;
+}
+
+.modal-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.modal-content > p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.modal-details {
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 24px;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+[data-theme="dark"] .modal-details {
+  background: var(--gray-100);
+}
+
+.modal-details p {
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.modal-details strong {
+  color: var(--dark);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fleet-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    transform: translateX(100%);
+    transition: transform var(--transition);
+    padding: 40px;
+  }
+
+  .nav-menu.active {
+    transform: translateX(0);
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 14px 24px;
+    color: var(--dark) !important;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-img-wrapper img {
+    height: 300px;
+  }
+
+  .services-grid,
+  .fleet-grid,
+  .why-grid,
+  .packages-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  .booking-widget {
+    animation: none;
+  }
+
+  .float-call {
+    bottom: 160px;
+  }
+
+  .testimonial-card {
+    padding: 28px 20px;
+  }
+
+  .contact-map-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-map-header .btn-outline-map {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-map-wrapper {
+    height: 320px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .booking-widget {
+    padding: 24px 20px;
+  }
+
+  .modal-content {
+    padding: 28px 20px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions .btn {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <i class="fas fa-car-side"></i>
+      </div>
+      <h2>Ankit Tours & Travels</h2>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+      <p>Loading your journey...</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon"><i class="fas fa-route"></i></span>
+        <span class="logo-text">Ankit <strong>Tours</strong></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#fleet" class="nav-link">Fleet</a></li>
+        <li><a href="#packages" class="nav-link">Packages</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="tel:9769588544" class="btn btn-primary btn-sm nav-cta">
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="hero-slideshow">
+          <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920&q=80')"></div>
+          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1920&q=80')"></div>
+          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1920&q=80')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content container">
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+          <span class="hero-badge"><i class="fas fa-star"></i> Trusted by 5000+ Customers</span>
+          <h1>Your Trusted Travel Partner in <span class="gradient-text">Mumbai</span></h1>
+          <p>Comfortable, Safe & Affordable Cab Services for Airport Transfers, Local Travel, Outstation Trips, Corporate Travel & Special Events.</p>
+          <div class="hero-buttons">
+            <a href="#booking" class="btn btn-primary btn-lg">
+              <i class="fas fa-calendar-check"></i> Book Now
+            </a>
+            <a href="tel:9769588544" class="btn btn-outline btn-lg">
+              <i class="fas fa-phone"></i> Call Now
+            </a>
+            <a href="https://wa.me/919769588544?text=Hi%20Ankit%20Tours%20%26%20Travels%2C%20I%20would%20like%20to%20book%20a%20cab." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> WhatsApp Booking
+            </a>
+          </div>
+        </div>
+        <!-- Quick Booking Widget -->
+        <div class="booking-widget" id="booking" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <div class="booking-widget-header">
+            <h3><i class="fas fa-car"></i> Quick Book Your Ride</h3>
+            <p>Get instant quote â€” we respond within minutes</p>
+          </div>
+          <form class="booking-form" id="bookingForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="pickup"><i class="fas fa-map-marker-alt"></i> Pickup Location</label>
+                <input type="text" id="pickup" name="pickup" placeholder="Enter pickup address" required>
+              </div>
+              <div class="form-group">
+                <label for="drop"><i class="fas fa-flag-checkered"></i> Drop Location</label>
+                <input type="text" id="drop" name="drop" placeholder="Enter drop address" required>
+              </div>
+              <div class="form-group">
+                <label for="travelDate"><i class="fas fa-calendar"></i> Travel Date</label>
+                <input type="date" id="travelDate" name="travelDate" required>
+              </div>
+              <div class="form-group">
+                <label for="returnDate"><i class="fas fa-calendar-alt"></i> Return Date</label>
+                <input type="date" id="returnDate" name="returnDate">
+              </div>
+              <div class="form-group">
+                <label for="vehicleType"><i class="fas fa-car-side"></i> Vehicle Type</label>
+                <select id="vehicleType" name="vehicleType" required>
+                  <option value="">Select Vehicle</option>
+                  <option value="Hatchback">Hatchback</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="SUV">SUV</option>
+                  <option value="Innova Crysta">Innova Crysta</option>
+                  <option value="Tempo Traveller">Tempo Traveller</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="passengers"><i class="fas fa-users"></i> Passengers</label>
+                <select id="passengers" name="passengers" required>
+                  <option value="">Select</option>
+                  <option value="1-2">1-2</option>
+                  <option value="3-4">3-4</option>
+                  <option value="5-6">5-6</option>
+                  <option value="7-12">7-12</option>
+                  <option value="13+">13+</option>
+                </select>
+              </div>
+              <div class="form-group form-group-full">
+                <label for="mobile"><i class="fas fa-mobile-alt"></i> Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <i class="fas fa-paper-plane"></i> Book Ride
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <a href="#about" aria-label="Scroll down">
+          <span>Explore</span>
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Brand Carousel -->
+    <section class="brand-carousel" aria-label="Trusted partners">
+      <div class="brand-track">
+        <div class="brand-item"><i class="fas fa-plane"></i> Airport Transfers</div>
+        <div class="brand-item"><i class="fas fa-building"></i> Corporate Travel</div>
+        <div class="brand-item"><i class="fas fa-ring"></i> Wedding Rides</div>
+        <div class="brand-item"><i class="fas fa-mountain"></i> Outstation Tours</div>
+        <div class="brand-item"><i class="fas fa-map-marked-alt"></i> Tourist Packages</div>
+        <div class="brand-item"><i class="fas fa-shield-alt"></i> Safe & Insured</div>
+        <div class="brand-item"><i class="fas fa-clock"></i> 24/7 Available</div>
+        <div class="brand-item"><i class="fas fa-star"></i> 5-Star Rated</div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="brand-item"><i class="fas fa-plane"></i> Airport Transfers</div>
+        <div class="brand-item"><i class="fas fa-building"></i> Corporate Travel</div>
+        <div class="brand-item"><i class="fas fa-ring"></i> Wedding Rides</div>
+        <div class="brand-item"><i class="fas fa-mountain"></i> Outstation Tours</div>
+        <div class="brand-item"><i class="fas fa-map-marked-alt"></i> Tourist Packages</div>
+        <div class="brand-item"><i class="fas fa-shield-alt"></i> Safe & Insured</div>
+        <div class="brand-item"><i class="fas fa-clock"></i> 24/7 Available</div>
+        <div class="brand-item"><i class="fas fa-star"></i> 5-Star Rated</div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image" data-aos="fade-right">
+            <div class="about-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80" alt="Professional cab service in Mumbai" loading="lazy">
+              <div class="about-badge glass">
+                <span class="about-badge-number">10+</span>
+                <span class="about-badge-text">Years of Excellence</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content" data-aos="fade-left">
+            <span class="section-tag">About Us</span>
+            <h2 class="section-title">Welcome to Ankit Tours & Travels</h2>
+            <p>At Ankit Tours & Travels, we provide reliable, comfortable and affordable transportation services across Mumbai and Maharashtra. Whether you need an airport transfer, local city travel, family vacation vehicle, corporate transportation, wedding travel arrangements or outstation tour package, our professional drivers and well-maintained vehicles ensure a safe and enjoyable journey every time.</p>
+            <div class="about-features">
+              <div class="about-feature">
+                <i class="fas fa-user-tie"></i>
+                <div>
+                  <h4>Owner: Sanjay Tiwari</h4>
+                  <p>Committed to quality service</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Thakur Village, Kandivali East</h4>
+                  <p>Mumbai, Maharashtra</p>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">What We Offer</span>
+          <h2 class="section-title">Our Premium Services</h2>
+          <p class="section-desc">Comprehensive travel solutions tailored to your every need</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="service-icon"><i class="fas fa-plane-arrival"></i></div>
+            <h3>Airport Transfers</h3>
+            <p>Punctual pickup and drop to Mumbai Airport with flight tracking and meet & greet service.</p>
+            <span class="service-link">Learn more <i class="fas fa-arrow-right"></i></span>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon"><i class="fas fa-city"></i></div>
+            <h3>Local City Rides</h3>
+            <p>Comfortable hourly and daily rentals for shopping, meetings, and city exploration across Mumbai.</p>
+            <span class="service-link">Learn more <i class="fas fa-arrow-right"></i></span>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon"><i class="fas fa-road"></i></div>
+            <h3>Outstation Tours</h3>
+            <p>One-way and round trips to Lonavala, Mahabaleshwar, Shirdi, Nashik and beyond Maharashtra.</p>
+            <span class="service-link">Learn more <i class="fas fa-arrow-right"></i></span>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>Corporate Travel</h3>
+            <p>Professional transportation for business meetings, conferences, and employee commute programs.</p>
+            <span class="service-link">Learn more <i class="fas fa-arrow-right"></i></span>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-icon"><i class="fas fa-heart"></i></div>
+            <h3>Wedding Transportation</h3>
+            <p>Elegant fleet for weddings, receptions, and special celebrations with decorated vehicles.</p>
+            <span class="service-link">Learn more <i class="fas fa-arrow-right"></i></span>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-icon"><i class="fas fa-umbrella-beach"></i></div>
+            <h3>Tourist Packages</h3>
+            <p>Curated holiday packages with sightseeing, hotel coordination, and experienced drivers.</p>
+            <span class="service-link">Learn more <i class="fas fa-arrow-right"></i></span>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-icon"><i class="fas fa-key"></i></div>
+            <h3>Driver Included Rental</h3>
+            <p>Well-maintained vehicles with professional, verified drivers for a stress-free journey.</p>
+            <span class="service-link">Learn more <i class="fas fa-arrow-right"></i></span>
+          </article>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-icon"><i class="fas fa-users"></i></div>
+            <h3>Group Travel Services</h3>
+            <p>Tempo travellers and multi-vehicle arrangements for family trips and group outings.</p>
+            <span class="service-link">Learn more <i class="fas fa-arrow-right"></i></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vehicle Fleet -->
+    <section class="section fleet" id="fleet">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Our Fleet</span>
+          <h2 class="section-title">Premium Vehicle Collection</h2>
+          <p class="section-desc">Choose from our well-maintained fleet for every occasion</p>
+        </div>
+        <div class="fleet-grid">
+          <article class="vehicle-card" data-aos="zoom-in" data-aos-delay="0">
+            <div class="vehicle-image">
+              <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&h=400&q=80" alt="Hatchback cab" loading="lazy">
+              <div class="vehicle-overlay">
+                <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Hatchback</h3>
+              <div class="vehicle-meta">
+                <span><i class="fas fa-users"></i> 4 Seats</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+                <span><i class="fas fa-user-tie"></i> Driver</span>
+              </div>
+              <ul class="vehicle-features">
+                <li><i class="fas fa-check"></i> Fuel Efficient</li>
+                <li><i class="fas fa-check"></i> City Travel</li>
+                <li><i class="fas fa-check"></i> Budget Friendly</li>
+              </ul>
+            </div>
+          </article>
+          <article class="vehicle-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="vehicle-image">
+              <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&h=400&q=80" alt="Sedan cab" loading="lazy">
+              <div class="vehicle-overlay">
+                <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Sedan</h3>
+              <div class="vehicle-meta">
+                <span><i class="fas fa-users"></i> 4 Seats</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+                <span><i class="fas fa-user-tie"></i> Driver</span>
+              </div>
+              <ul class="vehicle-features">
+                <li><i class="fas fa-check"></i> Premium Comfort</li>
+                <li><i class="fas fa-check"></i> Airport Rides</li>
+                <li><i class="fas fa-check"></i> Corporate Use</li>
+              </ul>
+            </div>
+          </article>
+          <article class="vehicle-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="vehicle-image">
+              <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=600&h=400&q=80" alt="SUV cab" loading="lazy">
+              <div class="vehicle-overlay">
+                <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="vehicle-info">
+              <h3>SUV</h3>
+              <div class="vehicle-meta">
+                <span><i class="fas fa-users"></i> 6 Seats</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+                <span><i class="fas fa-user-tie"></i> Driver</span>
+              </div>
+              <ul class="vehicle-features">
+                <li><i class="fas fa-check"></i> Spacious</li>
+                <li><i class="fas fa-check"></i> Family Trips</li>
+                <li><i class="fas fa-check"></i> Outstation Ready</li>
+              </ul>
+            </div>
+          </article>
+          <article class="vehicle-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="vehicle-image">
+              <img src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Innova Crysta premium MUV" loading="lazy">
+              <div class="vehicle-overlay">
+                <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Innova Crysta</h3>
+              <div class="vehicle-meta">
+                <span><i class="fas fa-users"></i> 7 Seats</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+                <span><i class="fas fa-user-tie"></i> Driver</span>
+              </div>
+              <ul class="vehicle-features">
+                <li><i class="fas fa-check"></i> Premium MUV</li>
+                <li><i class="fas fa-check"></i> Long Distance</li>
+                <li><i class="fas fa-check"></i> Extra Luggage</li>
+              </ul>
+            </div>
+          </article>
+          <article class="vehicle-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="vehicle-image">
+              <img src="https://images.pexels.com/photos/1123982/pexels-photo-1123982.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tempo Traveller for group travel" loading="lazy">
+              <div class="vehicle-overlay">
+                <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Tempo Traveller</h3>
+              <div class="vehicle-meta">
+                <span><i class="fas fa-users"></i> 12-17 Seats</span>
+                <span><i class="fas fa-snowflake"></i> AC</span>
+                <span><i class="fas fa-user-tie"></i> Driver</span>
+              </div>
+              <ul class="vehicle-features">
+                <li><i class="fas fa-check"></i> Group Travel</li>
+                <li><i class="fas fa-check"></i> Tours & Pilgrimage</li>
+                <li><i class="fas fa-check"></i> Pushback Seats</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-us">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title">The Ankit Tours Advantage</h2>
+          <p class="section-desc">Experience the difference with our commitment to excellence</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card" data-aos="flip-left" data-aos-delay="0">
+            <div class="why-icon"><i class="fas fa-user-tie"></i></div>
+            <h4>Professional Drivers</h4>
+            <p>Experienced, courteous and verified drivers</p>
+          </div>
+          <div class="why-card" data-aos="flip-left" data-aos-delay="100">
+            <div class="why-icon"><i class="fas fa-spray-can-sparkles"></i></div>
+            <h4>Clean Vehicles</h4>
+            <p>Sanitized and well-maintained fleet</p>
+          </div>
+          <div class="why-card" data-aos="flip-left" data-aos-delay="200">
+            <div class="why-icon"><i class="fas fa-tags"></i></div>
+            <h4>Affordable Pricing</h4>
+            <p>Transparent rates with no hidden charges</p>
+          </div>
+          <div class="why-card" data-aos="flip-left" data-aos-delay="300">
+            <div class="why-icon"><i class="fas fa-clock"></i></div>
+            <h4>24/7 Service</h4>
+            <p>Available round the clock for your needs</p>
+          </div>
+          <div class="why-card" data-aos="flip-left" data-aos-delay="400">
+            <div class="why-icon"><i class="fas fa-location-dot"></i></div>
+            <h4>GPS Enabled Trips</h4>
+            <p>Real-time tracking for safety</p>
+          </div>
+          <div class="why-card" data-aos="flip-left" data-aos-delay="500">
+            <div class="why-icon"><i class="fas fa-headset"></i></div>
+            <h4>Customer Support</h4>
+            <p>Dedicated support team always ready</p>
+          </div>
+          <div class="why-card" data-aos="flip-left" data-aos-delay="600">
+            <div class="why-icon"><i class="fas fa-plane"></i></div>
+            <h4>Airport Pickup & Drop</h4>
+            <p>On-time airport transfer service</p>
+          </div>
+          <div class="why-card" data-aos="flip-left" data-aos-delay="700">
+            <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
+            <h4>Safe Travel Experience</h4>
+            <p>Your safety is our top priority</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats">
+      <div class="stats-bg"></div>
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+            <div class="stat-number" data-target="5000">0</div>
+            <div class="stat-suffix">+</div>
+            <p>Happy Customers</p>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-number" data-target="10">0</div>
+            <div class="stat-suffix">+</div>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-suffix">+</div>
+            <p>Destinations Covered</p>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-number stat-text">24/7</div>
+            <p>Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tour Packages -->
+    <section class="section packages" id="packages">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Explore Maharashtra</span>
+          <h2 class="section-title">Popular Tour Packages</h2>
+          <p class="section-desc">Handpicked destinations with all-inclusive cab packages</p>
+        </div>
+        <div class="packages-grid">
+          <article class="package-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&q=80" alt="Lonavala tour package" loading="lazy">
+            </div>
+            <div class="package-content">
+              <h3>Lonavala</h3>
+              <p><i class="fas fa-clock"></i> 1 Day / 1 Night</p>
+              <p class="package-desc">Hill station getaway with scenic views, waterfalls and fresh air.</p>
+              <a href="#booking" class="btn btn-primary btn-block">Book Now</a>
+            </div>
+          </article>
+          <article class="package-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&h=400&q=80" alt="Mahabaleshwar hill station tour package" loading="lazy">
+            </div>
+            <div class="package-content">
+              <h3>Mahabaleshwar</h3>
+              <p><i class="fas fa-clock"></i> 2 Days / 1 Night</p>
+              <p class="package-desc">Strawberry farms, viewpoints and pleasant climate retreat.</p>
+              <a href="#booking" class="btn btn-primary btn-block">Book Now</a>
+            </div>
+          </article>
+          <article class="package-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="package-image">
+              <img src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Shirdi pilgrimage tour package" loading="lazy">
+            </div>
+            <div class="package-content">
+              <h3>Shirdi</h3>
+              <p><i class="fas fa-clock"></i> 1 Day Trip</p>
+              <p class="package-desc">Sacred pilgrimage to Sai Baba temple with comfortable travel.</p>
+              <a href="#booking" class="btn btn-primary btn-block">Book Now</a>
+            </div>
+          </article>
+          <article class="package-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=600&q=80" alt="Nashik tour package" loading="lazy">
+            </div>
+            <div class="package-content">
+              <h3>Nashik</h3>
+              <p><i class="fas fa-clock"></i> 1 Day / 1 Night</p>
+              <p class="package-desc">Wine country, temples and the holy Godavari river.</p>
+              <a href="#booking" class="btn btn-primary btn-block">Book Now</a>
+            </div>
+          </article>
+          <article class="package-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=600&q=80" alt="Alibaug tour package" loading="lazy">
+            </div>
+            <div class="package-content">
+              <h3>Alibaug</h3>
+              <p><i class="fas fa-clock"></i> 1 Day Trip</p>
+              <p class="package-desc">Beach paradise with forts, seafood and coastal charm.</p>
+              <a href="#booking" class="btn btn-primary btn-block">Book Now</a>
+            </div>
+          </article>
+          <article class="package-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80" alt="Matheran tour package" loading="lazy">
+            </div>
+            <div class="package-content">
+              <h3>Matheran</h3>
+              <p><i class="fas fa-clock"></i> 1 Day Trip</p>
+              <p class="package-desc">Asia's only automobile-free hill station with toy train rides.</p>
+              <a href="#booking" class="btn btn-primary btn-block">Book Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+          <p class="section-desc">Real reviews from happy travelers</p>
+        </div>
+        <div class="testimonial-slider" data-aos="fade-up">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-slide active">
+              <div class="testimonial-card glass">
+                <div class="testimonial-stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <p class="testimonial-text">"Excellent service and punctual driver. Booked for airport transfer and they were waiting right on time. Highly recommended!"</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">R</div>
+                  <div>
+                    <h4>Rahul Sharma</h4>
+                    <span>Airport Transfer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass">
+                <div class="testimonial-stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <p class="testimonial-text">"Comfortable vehicle and professional experience. Took Innova Crysta for family trip to Mahabaleshwar. Will book again!"</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">P</div>
+                  <div>
+                    <h4>Priya Mehta</h4>
+                    <span>Outstation Trip</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass">
+                <div class="testimonial-stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <p class="testimonial-text">"Best cab service for family trips. Sanjay ji is very cooperative and pricing is very reasonable. Thank you Ankit Tours!"</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">A</div>
+                  <div>
+                    <h4>Amit Patel</h4>
+                    <span>Family Vacation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass">
+                <div class="testimonial-stars">â˜…â˜…â˜…â˜…â˜…</div>
+                <p class="testimonial-text">"Used their service for corporate travel. Professional drivers, clean cars, and always on schedule. Perfect for business needs."</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">S</div>
+                  <div>
+                    <h4>Sneha Desai</h4>
+                    <span>Corporate Travel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Gallery</span>
+          <h2 class="section-title">Moments From Our Journeys</h2>
+          <p class="section-desc">Explore our fleet, destinations and happy customers</p>
+        </div>
+        <div class="gallery-filters" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="vehicles">Vehicles</button>
+          <button class="filter-btn" data-filter="destinations">Destinations</button>
+          <button class="filter-btn" data-filter="customers">Customers</button>
+        </div>
+        <div class="gallery-grid" data-aos="fade-up">
+          <div class="gallery-item" data-category="vehicles">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=500&h=375&q=80" alt="Premium sedan fleet" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-category="destinations">
+            <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=500&q=80" alt="Lonavala destination" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-category="vehicles">
+            <img src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=500&h=375&fit=crop" alt="Innova Crysta vehicle" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-category="customers">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&q=80" alt="Happy travelers on road trip" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-category="destinations">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=500&h=375&q=80" alt="Mahabaleshwar hills destination" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-category="vehicles">
+            <img src="https://images.pexels.com/photos/1123982/pexels-photo-1123982.jpeg?auto=compress&cs=tinysrgb&w=500&h=375&fit=crop" alt="Tempo traveller for groups" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-category="destinations">
+            <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=500&q=80" alt="Alibaug beach" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-category="customers">
+            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=500&h=375&fit=crop" alt="Family travel experience" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-category="vehicles">
+            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=500&h=375&q=80" alt="SUV for outstation" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+      <img src="" alt="Gallery preview" id="lightboxImg">
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Everything you need to know before booking</p>
+        </div>
+        <div class="faq-list" data-aos="fade-up">
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>How do I book a cab?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>You can book through our Quick Booking form on the homepage, call us at 9769588544 or 7208183102, or message us on WhatsApp. We confirm your booking within minutes.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you provide airport transfers?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! We offer reliable airport pickup and drop services to Mumbai International and Domestic airports with flight tracking and on-time guarantee.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are drivers included?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. All our vehicles come with professional, experienced and verified drivers. Self-drive options are not available.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you offer outstation trips?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we provide one-way and round-trip outstation services to Lonavala, Mahabaleshwar, Shirdi, Nashik, Alibaug, Matheran and many more destinations across Maharashtra.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I book for corporate travel?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we offer dedicated corporate travel solutions including employee commute, client pickups, and event transportation with monthly billing options available.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Contact Us</span>
+          <h2 class="section-title">Get In Touch With Us</h2>
+          <p class="section-desc">We're here to help plan your perfect journey</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-card glass">
+              <h3>Ankit Tours & Travels</h3>
+              <ul class="contact-list">
+                <li>
+                  <i class="fas fa-user"></i>
+                  <div>
+                    <strong>Owner</strong>
+                    <span>Sanjay Tiwari</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <strong>Phone</strong>
+                    <a href="tel:9769588544">9769588544</a>
+                    <a href="tel:7208183102">7208183102</a>
+                  </div>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <strong>Email</strong>
+                    <a href="mailto:tkhusboo912@gmail.com">tkhusboo912@gmail.com</a>
+                  </div>
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <strong>Location</strong>
+                    <span>Thakur Village, Kandivali East, Mumbai, Maharashtra</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="fab fa-instagram"></i>
+                  <div>
+                    <strong>Instagram</strong>
+                    <a href="https://instagram.com/ankit_tours_and_travels" target="_blank" rel="noopener">@ankit_tours_and_travels</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="contact-actions">
+                <a href="https://wa.me/919769588544?text=Hi%20Ankit%20Tours%20%26%20Travels%2C%20I%20would%20like%20to%20inquire." class="btn btn-whatsapp" target="_blank" rel="noopener">
+                  <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="tel:9769588544" class="btn btn-primary">
+                  <i class="fas fa-phone"></i> Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrapper" data-aos="fade-left">
+            <form class="contact-form glass" id="contactForm">
+              <h3>Send Us a Message</h3>
+              <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Phone Number</label>
+                <input type="tel" id="contactPhone" name="phone" placeholder="Enter your phone" required>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block btn-lg">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact-map-section" data-aos="fade-up">
+          <div class="contact-map-header">
+            <div class="contact-map-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h3>Find Us on the Map</h3>
+              <p>Thakur Village, Kandivali East, Mumbai, Maharashtra 400101</p>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Thakur+Village,+Kandivali+East,+Mumbai,+Maharashtra" target="_blank" rel="noopener" class="btn btn-outline-map">
+              <i class="fas fa-directions"></i> Get Directions
+            </a>
+          </div>
+          <div class="contact-map-wrapper glass">
+            <iframe
+              src="https://maps.google.com/maps?q=Thakur+Village,+Kandivali+East,+Mumbai,+Maharashtra,+India&hl=en&z=15&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ankit Tours & Travels Location - Thakur Village, Kandivali East">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon"><i class="fas fa-route"></i></span>
+            <span class="logo-text">Ankit <strong>Tours</strong></span>
+          </a>
+          <p>Making Every Journey Comfortable, Safe & Memorable.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/ankit_tours_and_travels" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919769588544" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:9769588544" aria-label="Call"><i class="fas fa-phone"></i></a>
+            <a href="mailto:tkhusboo912@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#fleet">Our Fleet</a></li>
+            <li><a href="#packages">Tour Packages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Airport Transfers</a></li>
+            <li><a href="#services">Local City Rides</a></li>
+            <li><a href="#services">Outstation Tours</a></li>
+            <li><a href="#services">Corporate Travel</a></li>
+            <li><a href="#services">Wedding Transport</a></li>
+            <li><a href="#services">Tourist Packages</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Details</h4>
+          <ul>
+            <li><i class="fas fa-user"></i> Sanjay Tiwari</li>
+            <li><i class="fas fa-phone"></i> <a href="tel:9769588544">9769588544</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:7208183102">7208183102</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:tkhusboo912@gmail.com">tkhusboo912@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Thakur Village, Kandivali East, Mumbai</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ankit Tours & Travels. All Rights Reserved.</p>
+        <p class="footer-credit">
+          Designed & Developed by
+          <a href="https://sofftsolution.dev/" target="_blank" rel="noopener noreferrer">Sofftsolutation</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/919769588544?text=Hi%20Ankit%20Tours%20%26%20Travels%2C%20I%20would%20like%20to%20book%20a%20cab." class="float-btn float-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-tooltip">WhatsApp Us</span>
+  </a>
+  <a href="tel:9769588544" class="float-btn float-call" aria-label="Call us">
+    <i class="fas fa-phone"></i>
+    <span class="float-tooltip">Call Now</span>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Booking Confirmation Modal -->
+  <div class="modal" id="bookingModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content glass">
+      <button class="modal-close" id="modalClose" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="modal-icon success"><i class="fas fa-check-circle"></i></div>
+      <h3>Booking Inquiry Received!</h3>
+      <p>Thank you for choosing Ankit Tours & Travels. We will contact you shortly on your registered mobile number to confirm your ride details.</p>
+      <div class="modal-details" id="modalDetails"></div>
+      <div class="modal-actions">
+        <a href="https://wa.me/919769588544" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+        <button class="btn btn-primary" id="modalOk">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+/**
+ * Ankit Tours & Travels - Main JavaScript
+ */
+
+(function () {
+  'use strict';
+
+  /* ---- DOM Elements ---- */
+  const loader = document.getElementById('loader');
+  const header = document.getElementById('header');
+  const navMenu = document.getElementById('navMenu');
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const scrollProgress = document.getElementById('scrollProgress');
+  const backToTop = document.getElementById('backToTop');
+  const themeToggle = document.getElementById('themeToggle');
+  const bookingForm = document.getElementById('bookingForm');
+  const contactForm = document.getElementById('contactForm');
+  const bookingModal = document.getElementById('bookingModal');
+  const modalClose = document.getElementById('modalClose');
+  const modalOk = document.getElementById('modalOk');
+  const modalDetails = document.getElementById('modalDetails');
+  const testimonialTrack = document.getElementById('testimonialTrack');
+  const testimonialDots = document.getElementById('testimonialDots');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev = document.getElementById('lightboxPrev');
+  const lightboxNext = document.getElementById('lightboxNext');
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  const faqItems = document.querySelectorAll('.faq-item');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+
+  let currentSlide = 0;
+  let currentTestimonial = 0;
+  let testimonialInterval;
+  let heroInterval;
+  let currentLightboxIndex = 0;
+  let visibleGalleryItems = [];
+
+  /* ---- Loading Screen ---- */
+  function initLoader() {
+    document.body.classList.add('loading');
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        loader.classList.add('hidden');
+        document.body.classList.remove('loading');
+      }, 2200);
+    });
+
+    setTimeout(() => {
+      loader.classList.add('hidden');
+      document.body.classList.remove('loading');
+    }, 4000);
+  }
+
+  /* ---- AOS Initialization ---- */
+  function initAOS() {
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 80,
+        disable: 'mobile'
+      });
+    }
+  }
+
+  /* ---- Theme Toggle ---- */
+  function initTheme() {
+    const savedTheme = localStorage.getItem('ankit-theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      updateThemeIcon(true);
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('ankit-theme', 'light');
+        updateThemeIcon(false);
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('ankit-theme', 'dark');
+        updateThemeIcon(true);
+      }
+    });
+  }
+
+  function updateThemeIcon(isDark) {
+    themeToggle.innerHTML = isDark
+      ? '<i class="fas fa-sun"></i>'
+      : '<i class="fas fa-moon"></i>';
+  }
+
+  /* ---- Sticky Header & Scroll Progress ---- */
+  function initScroll() {
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+
+      scrollProgress.style.width = scrollPercent + '%';
+
+      if (scrollTop > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+
+      if (scrollTop > 400) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+
+      updateActiveNavLink();
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ---- Mobile Navigation ---- */
+  function initMobileNav() {
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      header.classList.toggle('menu-open');
+      document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        header.classList.remove('menu-open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  /* ---- Active Nav Link on Scroll ---- */
+  function updateActiveNavLink() {
+    const sections = document.querySelectorAll('section[id]');
+    const scrollPos = window.scrollY + 120;
+
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+
+      if (scrollPos >= top && scrollPos < top + height) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }
+
+  /* ---- Hero Slideshow & Parallax ---- */
+  function initHero() {
+    if (heroSlides.length === 0) return;
+
+    heroInterval = setInterval(() => {
+      heroSlides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % heroSlides.length;
+      heroSlides[currentSlide].classList.add('active');
+    }, 5000);
+
+    window.addEventListener('scroll', () => {
+      const hero = document.querySelector('.hero');
+      if (!hero) return;
+      const scrolled = window.scrollY;
+      const heroHeight = hero.offsetHeight;
+      if (scrolled < heroHeight) {
+        const parallaxOffset = scrolled * 0.4;
+        hero.querySelector('.hero-bg').style.transform = `translateY(${parallaxOffset}px)`;
+      }
+    });
+  }
+
+  /* ---- Counter Animation ---- */
+  function initCounters() {
+    const statsSection = document.querySelector('.stats');
+    if (!statsSection) return;
+
+    let animated = false;
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !animated) {
+            animated = true;
+            animateCounters();
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(statsSection);
+  }
+
+  function animateCounters() {
+    statNumbers.forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-target'), 10);
+      const duration = 2000;
+      const step = target / (duration / 16);
+      let current = 0;
+
+      const updateCounter = () => {
+        current += step;
+        if (current < target) {
+          counter.textContent = Math.floor(current).toLocaleString('en-IN');
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.textContent = target.toLocaleString('en-IN');
+        }
+      };
+
+      updateCounter();
+    });
+  }
+
+  /* ---- Testimonial Slider ---- */
+  function initTestimonials() {
+    const slides = testimonialTrack.querySelectorAll('.testimonial-slide');
+    if (slides.length === 0) return;
+
+    slides.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.classList.add('testimonial-dot');
+      dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
+      if (index === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToTestimonial(index));
+      testimonialDots.appendChild(dot);
+    });
+
+    testimonialInterval = setInterval(() => {
+      goToTestimonial((currentTestimonial + 1) % slides.length);
+    }, 5000);
+  }
+
+  function goToTestimonial(index) {
+    const slides = testimonialTrack.querySelectorAll('.testimonial-slide');
+    const dots = testimonialDots.querySelectorAll('.testimonial-dot');
+
+    slides[currentTestimonial].classList.remove('active');
+    dots[currentTestimonial].classList.remove('active');
+
+    currentTestimonial = index;
+
+    slides[currentTestimonial].classList.add('active');
+    dots[currentTestimonial].classList.add('active');
+  }
+
+  /* ---- Gallery Filter & Lightbox ---- */
+  function initGallery() {
+    visibleGalleryItems = Array.from(galleryItems);
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            item.classList.remove('hidden');
+            item.style.animation = 'fadeIn 0.5s ease';
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        updateVisibleGalleryItems();
+      });
+    });
+
+    galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => openLightbox(index));
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    lightboxPrev.addEventListener('click', () => navigateLightbox(-1));
+    lightboxNext.addEventListener('click', () => navigateLightbox(1));
+
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') navigateLightbox(-1);
+      if (e.key === 'ArrowRight') navigateLightbox(1);
+    });
+  }
+
+  function updateVisibleGalleryItems() {
+    visibleGalleryItems = Array.from(galleryItems).filter(
+      item => !item.classList.contains('hidden')
+    );
+  }
+
+  function openLightbox(index) {
+    updateVisibleGalleryItems();
+    const allItems = Array.from(galleryItems);
+    const clickedItem = galleryItems[index];
+    currentLightboxIndex = visibleGalleryItems.indexOf(clickedItem);
+    if (currentLightboxIndex === -1) currentLightboxIndex = 0;
+
+    lightboxImg.src = visibleGalleryItems[currentLightboxIndex].querySelector('img').src;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function navigateLightbox(direction) {
+    updateVisibleGalleryItems();
+    currentLightboxIndex =
+      (currentLightboxIndex + direction + visibleGalleryItems.length) %
+      visibleGalleryItems.length;
+    lightboxImg.src = visibleGalleryItems[currentLightboxIndex].querySelector('img').src;
+  }
+
+  /* ---- FAQ Accordion ---- */
+  function initFAQ() {
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+
+        faqItems.forEach(faq => faq.classList.remove('active'));
+
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+  }
+
+  /* ---- Booking Form ---- */
+  function initBookingForm() {
+    const travelDateInput = document.getElementById('travelDate');
+    const returnDateInput = document.getElementById('returnDate');
+    const today = new Date().toISOString().split('T')[0];
+    travelDateInput.setAttribute('min', today);
+    returnDateInput.setAttribute('min', today);
+
+    travelDateInput.addEventListener('change', () => {
+      returnDateInput.setAttribute('min', travelDateInput.value);
+    });
+
+    bookingForm.addEventListener('submit', e => {
+      e.preventDefault();
+
+      const formData = new FormData(bookingForm);
+      const data = Object.fromEntries(formData.entries());
+
+      showModal({
+        title: 'Booking Inquiry Received!',
+        icon: '<i class="fas fa-check-circle"></i>',
+        message:
+          'Thank you for choosing Ankit Tours & Travels. We will contact you shortly on your registered mobile number to confirm your ride details.',
+        details: `
+          <p><strong>Pickup:</strong> ${escapeHtml(data.pickup)}</p>
+          <p><strong>Drop:</strong> ${escapeHtml(data.drop)}</p>
+          <p><strong>Travel Date:</strong> ${formatDate(data.travelDate)}</p>
+          ${data.returnDate ? `<p><strong>Return Date:</strong> ${formatDate(data.returnDate)}</p>` : ''}
+          <p><strong>Vehicle:</strong> ${escapeHtml(data.vehicleType)}</p>
+          <p><strong>Passengers:</strong> ${escapeHtml(data.passengers)}</p>
+          <p><strong>Mobile:</strong> ${escapeHtml(data.mobile)}</p>
+        `
+      });
+
+      bookingForm.reset();
+    });
+  }
+
+  /* ---- Contact Form ---- */
+  function initContactForm() {
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+
+      showModal({
+        title: 'Message Sent Successfully!',
+        icon: '<i class="fas fa-envelope-circle-check"></i>',
+        message: 'Thank you for reaching out. We will get back to you within 24 hours.',
+        details: '<p>Our team is reviewing your message and will respond shortly.</p>'
+      });
+
+      contactForm.reset();
+    });
+  }
+
+  /* ---- Modal ---- */
+  const modalTitle = bookingModal.querySelector('h3');
+  const modalIcon = bookingModal.querySelector('.modal-icon');
+  const modalMessage = bookingModal.querySelector('.modal-content > p');
+
+  function showModal({ title, icon, message, details }) {
+    modalTitle.textContent = title;
+    modalIcon.innerHTML = icon;
+    if (message) modalMessage.textContent = message;
+    modalDetails.innerHTML = details || '';
+    bookingModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function resetBookingModal() {
+    modalTitle.textContent = 'Booking Inquiry Received!';
+    modalIcon.innerHTML = '<i class="fas fa-check-circle"></i>';
+    modalMessage.textContent =
+      'Thank you for choosing Ankit Tours & Travels. We will contact you shortly on your registered mobile number to confirm your ride details.';
+  }
+
+  function initModal() {
+    const closeModal = () => {
+      bookingModal.classList.remove('active');
+      document.body.style.overflow = '';
+      resetBookingModal();
+    };
+
+    modalClose.addEventListener('click', closeModal);
+    modalOk.addEventListener('click', closeModal);
+    document.getElementById('modalOverlay').addEventListener('click', closeModal);
+  }
+
+  /* ---- Smooth Scroll for Anchor Links ---- */
+  function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        const href = anchor.getAttribute('href');
+        if (href === '#') return;
+
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  }
+
+  /* ---- Utility Functions ---- */
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  function formatDate(dateStr) {
+    if (!dateStr) return '';
+    const date = new Date(dateStr + 'T00:00:00');
+    return date.toLocaleDateString('en-IN', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+  }
+
+  /* ---- Fade In Animation for Gallery ---- */
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  `;
+  document.head.appendChild(style);
+
+  /* ---- Image Fallback ---- */
+  const FALLBACK_IMAGE =
+    'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=600&h=400&q=80';
+
+  function initImageFallback() {
+    document.querySelectorAll('img[src]').forEach(img => {
+      if (!img.id || img.id !== 'lightboxImg') {
+        img.addEventListener('error', function handleImageError() {
+          if (this.src !== FALLBACK_IMAGE) {
+            this.src = FALLBACK_IMAGE;
+          }
+          this.removeEventListener('error', handleImageError);
+        });
+      }
+    });
+  }
+
+  /* ---- Initialize Everything ---- */
+  function init() {
+    initLoader();
+    initTheme();
+    initScroll();
+    initMobileNav();
+    initHero();
+    initCounters();
+    initTestimonials();
+    initGallery();
+    initFAQ();
+    initBookingForm();
+    initContactForm();
+    initModal();
+    initSmoothScroll();
+    initImageFallback();
+    initAOS();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+
+</script>
+</body>
+</html>
+

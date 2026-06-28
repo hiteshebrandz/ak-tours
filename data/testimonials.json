@@ -1,0 +1,30 @@
+[
+  {
+    "id": "t_default_1",
+    "text": "Excellent service and punctual driver. Booked for airport transfer and they were waiting right on time. Highly recommended!",
+    "name": "Rahul Sharma",
+    "role": "Airport Transfer",
+    "stars": 5
+  },
+  {
+    "id": "t_default_2",
+    "text": "Comfortable vehicle and professional experience. Took Innova Crysta for family trip to Mahabaleshwar. Will book again!",
+    "name": "Priya Mehta",
+    "role": "Outstation Trip",
+    "stars": 5
+  },
+  {
+    "id": "t_default_3",
+    "text": "Best cab service for family trips. Sanjay ji is very cooperative and pricing is very reasonable. Thank you Ankit Tours!",
+    "name": "Amit Patel",
+    "role": "Family Vacation",
+    "stars": 5
+  },
+  {
+    "id": "t_default_4",
+    "text": "Used their service for corporate travel. Professional drivers, clean cars, and always on schedule. Perfect for business needs.",
+    "name": "Sneha Desai",
+    "role": "Corporate Travel",
+    "stars": 5
+  }
+]

@@ -2189,6 +2189,19 @@ a.footer-contact-card:hover {
   color: var(--primary);
 }
 
+.footer-owner-icon {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: var(--primary);
+  font-size: 1rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
 .footer-owner strong {
   color: var(--white);
 }
@@ -2482,7 +2495,7 @@ a.footer-contact-card:hover {
     flex-direction: column;
     text-align: center;
     gap: 8px;
-    padding: 20px 0 calc(96px + env(safe-area-inset-bottom, 0px));
+    padding: 20px 0 12px;
   }
 
   /* Mobile menu overlay */
@@ -2685,6 +2698,95 @@ a.footer-contact-card:hover {
   gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.modal-content.modal-form {
+  max-width: 520px;
+  text-align: left;
+  padding: 32px 36px;
+}
+
+.modal-form-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.modal-form-header i {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.modal-form-header h3 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.modal-form-header p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+.modal-form .form-group {
+  margin-bottom: 16px;
+}
+
+.modal-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.modal-form-error {
+  color: #DC2626;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  min-height: 1.2em;
+}
+
+.modal-form-note {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  padding: 10px 12px;
+  background: var(--gray-100);
+  border-radius: var(--radius-md);
+}
+
+.modal-form-success {
+  text-align: center;
+  padding: 12px 0 4px;
+  color: #059669;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.modal-form-success i {
+  margin-right: 6px;
+}
+
+.modal-form-footer {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.modal-form-footer .btn-link {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 8px 0;
+  font-family: var(--font-body);
+}
+
+.modal-form-footer .btn-link:hover {
+  color: var(--primary);
 }
 
 /* Responsive */
@@ -2916,9 +3018,9 @@ a.footer-contact-card:hover {
     <section class="hero" id="home">
       <div class="hero-bg">
         <div class="hero-slideshow">
-          <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920&q=80')"></div>
-          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1920&q=80')"></div>
-          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1920&q=80')"></div>
+          <div class="hero-slide active" style="background-image: url('https://similar-gold-nbyf4ym4.edgeone.dev/WhatsApp%20Image%202026-06-27%20at%2010.55.39%20PM.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('https://coming-beige-lyxlpzqo.edgeone.dev/WhatsApp%20Image%202026-06-27%20at%2010.55.40%20PM.jpeg')"></div>
+          <div class="hero-slide" style="background-image: url('https://loyal-ivory-nu5l40jq.edgeone.dev/WhatsApp%20Image%202026-06-28%20at%2010.29.37%20AM.jpeg')"></div>
         </div>
         <div class="hero-overlay"></div>
       </div>
@@ -3406,7 +3508,7 @@ a.footer-contact-card:hover {
     </section>
 
     <!-- Testimonials -->
-    <section class="section testimonials">
+    <section class="section testimonials" id="testimonials">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
           <span class="section-tag">Testimonials</span>
@@ -3806,7 +3908,7 @@ a.footer-contact-card:hover {
         </div>
 
         <div class="footer-owner">
-          <i class="fas fa-user-tie"></i>
+          <button type="button" id="adminLoginBtn" class="footer-owner-icon" aria-label="Owner"><i class="fas fa-user-tie"></i></button>
           <span>Owned &amp; Operated by <strong>Sanjay Tiwari</strong></span>
         </div>
       </div>
@@ -3861,7 +3963,85 @@ a.footer-contact-card:hover {
     </div>
   </div>
 
+  <!-- Admin Login Modal -->
+  <div class="modal" id="adminLoginModal" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal="adminLoginModal"></div>
+    <div class="modal-content glass modal-form">
+      <button type="button" class="modal-close" data-close-modal="adminLoginModal" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="modal-form-header">
+        <i class="fas fa-user-shield"></i>
+        <h3>Admin Login</h3>
+        <p>Sign in to add testimonials</p>
+      </div>
+      <form id="adminLoginForm">
+        <div class="form-group">
+          <label for="adminEmail">Email</label>
+          <input type="email" id="adminEmail" required autocomplete="username" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="adminPassword">Password</label>
+          <input type="password" id="adminPassword" required autocomplete="current-password" placeholder="Enter password">
+        </div>
+        <p class="modal-form-error" id="adminLoginError" role="alert"></p>
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary" style="width:100%;">Sign In</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Add Testimonial Modal -->
+  <div class="modal" id="adminFormModal" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal="adminFormModal"></div>
+    <div class="modal-content glass modal-form">
+      <button type="button" class="modal-close" data-close-modal="adminFormModal" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="modal-form-header">
+        <i class="fas fa-comment-dots"></i>
+        <h3>Add Testimonial</h3>
+        <p>Fill in the customer review details</p>
+      </div>
+      <p class="modal-form-success" id="testimonialSuccess" hidden>
+        <i class="fas fa-check-circle"></i> Testimonial added successfully!
+      </p>
+      <form id="testimonialAdminForm">
+        <div class="form-group">
+          <label for="adminTName">Name</label>
+          <input type="text" id="adminTName" required placeholder="e.g. Rahul Sharma">
+        </div>
+        <div class="form-group">
+          <label for="adminTRole">Trip / Service</label>
+          <input type="text" id="adminTRole" required placeholder="e.g. Airport Transfer">
+        </div>
+        <div class="form-group">
+          <label for="adminTStars">Stars</label>
+          <select id="adminTStars">
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="adminTText">Review</label>
+          <textarea id="adminTText" required placeholder="Write the customer review here..."></textarea>
+        </div>
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary" style="width:100%;">
+            <i class="fas fa-plus-circle"></i> Add Testimonial
+          </button>
+        </div>
+        <div class="modal-form-footer">
+          <button type="button" class="btn-link" id="adminLogoutBtn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/admin-data.js"></script>
   <script>
 /**
  * Ankit Tours & Travels - Main JavaScript
@@ -4122,29 +4302,42 @@ a.footer-contact-card:hover {
   }
 
   /* ---- Testimonial Carousel ---- */
+  function hydrateTestimonials() {
+    if (typeof AnkitAdmin === 'undefined' || !testimonialTrack) return;
+    AnkitAdmin.renderTestimonialTrack(testimonialTrack, AnkitAdmin.getTestimonials());
+    currentTestimonial = 0;
+  }
+
+  function loadTestimonialsData() {
+    if (typeof AnkitAdmin === 'undefined') return Promise.resolve();
+    return AnkitAdmin.fetchTestimonialsFromFile()
+      .then(function (serverItems) {
+        const items = AnkitAdmin.getTestimonialsForSite(serverItems);
+        if (testimonialTrack && items.length) {
+          AnkitAdmin.renderTestimonialTrack(testimonialTrack, items);
+          currentTestimonial = 0;
+        }
+      });
+  }
+
   function initTestimonials() {
     const slides = testimonialTrack.querySelectorAll('.testimonial-slide');
     if (slides.length === 0) return;
 
-    slides.forEach((_, index) => {
-      const dot = document.createElement('button');
-      dot.classList.add('testimonial-dot');
-      dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
-      if (index === 0) dot.classList.add('active');
-      dot.addEventListener('click', () => goToTestimonial(index));
-      testimonialDots.appendChild(dot);
-    });
+    rebuildTestimonialDots();
 
     if (testimonialPrev) {
       testimonialPrev.addEventListener('click', () => {
-        goToTestimonial((currentTestimonial - 1 + slides.length) % slides.length);
+        const count = testimonialTrack.querySelectorAll('.testimonial-slide').length;
+        goToTestimonial((currentTestimonial - 1 + count) % count);
         resetTestimonialInterval();
       });
     }
 
     if (testimonialNext) {
       testimonialNext.addEventListener('click', () => {
-        goToTestimonial((currentTestimonial + 1) % slides.length);
+        const count = testimonialTrack.querySelectorAll('.testimonial-slide').length;
+        goToTestimonial((currentTestimonial + 1) % count);
         resetTestimonialInterval();
       });
     }
@@ -4157,16 +4350,47 @@ a.footer-contact-card:hover {
     testimonialTrack.addEventListener('touchend', e => {
       const diff = touchStartX - e.changedTouches[0].screenX;
       if (Math.abs(diff) < 50) return;
+      const count = testimonialTrack.querySelectorAll('.testimonial-slide').length;
       if (diff > 0) {
-        goToTestimonial((currentTestimonial + 1) % slides.length);
+        goToTestimonial((currentTestimonial + 1) % count);
       } else {
-        goToTestimonial((currentTestimonial - 1 + slides.length) % slides.length);
+        goToTestimonial((currentTestimonial - 1 + count) % count);
       }
       resetTestimonialInterval();
     }, { passive: true });
 
     resetTestimonialInterval();
     updateTestimonialCounter();
+  }
+
+  function rebuildTestimonialDots() {
+    const slides = testimonialTrack.querySelectorAll('.testimonial-slide');
+    testimonialDots.innerHTML = '';
+    if (slides.length === 0) return;
+
+    slides.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.classList.add('testimonial-dot');
+      dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
+      if (index === currentTestimonial) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        goToTestimonial(index);
+        resetTestimonialInterval();
+      });
+      testimonialDots.appendChild(dot);
+    });
+  }
+
+  function refreshTestimonialCarousel() {
+    if (typeof AnkitAdmin === 'undefined' || !testimonialTrack) return;
+    const items = AnkitAdmin.getTestimonials();
+    if (items.length === 0) return;
+
+    AnkitAdmin.renderTestimonialTrack(testimonialTrack, items);
+    currentTestimonial = 0;
+    rebuildTestimonialDots();
+    goToTestimonial(items.length - 1);
+    resetTestimonialInterval();
   }
 
   function resetTestimonialInterval() {
@@ -4375,6 +4599,101 @@ a.footer-contact-card:hover {
     document.getElementById('modalOverlay').addEventListener('click', closeModal);
   }
 
+  /* ---- Admin Testimonial Modals ---- */
+  function initAdminModals() {
+    const adminLoginBtn = document.getElementById('adminLoginBtn');
+    const adminLoginModal = document.getElementById('adminLoginModal');
+    const adminFormModal = document.getElementById('adminFormModal');
+    const adminLoginForm = document.getElementById('adminLoginForm');
+    const testimonialAdminForm = document.getElementById('testimonialAdminForm');
+    const loginError = document.getElementById('adminLoginError');
+    const testimonialSuccess = document.getElementById('testimonialSuccess');
+    const logoutBtn = document.getElementById('adminLogoutBtn');
+
+    if (!adminLoginBtn || !adminLoginModal || !adminFormModal || typeof AnkitAdmin === 'undefined') {
+      return;
+    }
+
+    let successTimeout;
+
+    function openAdminModal(modal) {
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeAdminModal(modal) {
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden', 'true');
+      if (!bookingModal.classList.contains('active')) {
+        document.body.style.overflow = '';
+      }
+    }
+
+    function openAdminFlow() {
+      if (AnkitAdmin.isLoggedIn()) {
+        openAdminModal(adminFormModal);
+      } else {
+        openAdminModal(adminLoginModal);
+      }
+    }
+
+    function bindModalClose(modal) {
+      modal.querySelectorAll('[data-close-modal]').forEach(el => {
+        el.addEventListener('click', () => closeAdminModal(modal));
+      });
+    }
+
+    bindModalClose(adminLoginModal);
+    bindModalClose(adminFormModal);
+
+    adminLoginBtn.addEventListener('click', openAdminFlow);
+
+    adminLoginForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const email = document.getElementById('adminEmail').value;
+      const password = document.getElementById('adminPassword').value;
+
+      if (AnkitAdmin.login(email, password)) {
+        loginError.textContent = '';
+        adminLoginForm.reset();
+        closeAdminModal(adminLoginModal);
+        openAdminModal(adminFormModal);
+      } else {
+        loginError.textContent = 'Invalid email or password. Please try again.';
+      }
+    });
+
+    testimonialAdminForm.addEventListener('submit', e => {
+      e.preventDefault();
+
+      AnkitAdmin.addTestimonial({
+        name: document.getElementById('adminTName').value,
+        role: document.getElementById('adminTRole').value,
+        text: document.getElementById('adminTText').value,
+        stars: document.getElementById('adminTStars').value
+      });
+
+      refreshTestimonialCarousel();
+      testimonialAdminForm.reset();
+      document.getElementById('adminTStars').value = '5';
+
+      testimonialSuccess.hidden = false;
+      clearTimeout(successTimeout);
+      successTimeout = setTimeout(() => {
+        testimonialSuccess.hidden = true;
+      }, 3000);
+    });
+
+    logoutBtn.addEventListener('click', () => {
+      AnkitAdmin.logout();
+      closeAdminModal(adminFormModal);
+      testimonialAdminForm.reset();
+      document.getElementById('adminTStars').value = '5';
+      testimonialSuccess.hidden = true;
+    });
+  }
+
   /* ---- Smooth Scroll for Anchor Links ---- */
   function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -4443,12 +4762,15 @@ a.footer-contact-card:hover {
     initMobileNav();
     initHero();
     initCounters();
-    initTestimonials();
+    loadTestimonialsData().then(function () {
+      initTestimonials();
+    });
     initGallery();
     initFAQ();
     initBookingForm();
     initContactForm();
     initModal();
+    initAdminModals();
     initSmoothScroll();
     initImageFallback();
     initAOS();
